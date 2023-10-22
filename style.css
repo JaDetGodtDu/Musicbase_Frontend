@@ -1,6 +1,12 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0 ;
   font-size: 1.2em;
+  background-color: rgb(56, 55, 55);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -31,62 +37,86 @@ img {
 }
 
 header {
-  background-color: wheat;
-  color: black;
-  padding: 25px;
+  background-color: #1ED760;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: abselute;
+  /* width: 100%; */
+  padding: 30px -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 40px;
 }
 
 main {
   display: flex;
+  padding: 0px 40px 10px;
 }
 
 main section {
   flex: 1;
-  border: 1px solid #ccc;
-  padding: 20px;
+  border: 1px solid #ccb;
+  color: #ccb;
+  border-radius: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  margin: 1%;
 }
 
 div {
   display: flex;
+  text-align: center;
+  padding: 1cm;
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 div section {
-  float: 1;
-  border: 1px solid #ccc;
-  padding: 20px;
-  height: 100%;
-  width: 33.33%;
-  float: left;
-  text-align: center;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  flex: 1;
+  border: 1px solid #ccb;
+  color: #ccb;
+  padding-bottom: 1px;
+  border-radius: 25px;
+  margin: 1%;
 }
 
-.background-header {
-  background-color: wheat;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  /* background-image: url("../pictures/header.jpg"); */
-  background-repeat: no-repeat;
-  opacity: 1;
-  background-size: cover;
-}
 
 footer {
-  background-color: white;
+  background-color: #1ED760;
   color: black;
   padding: 1em;
   text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 20px;
   background-position: center;
+  margin-top: auto;
 }
+
 #input-search {
   width: 199px;
+  border-radius: 8px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 #tool-grid {
   text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+}
+
+#album_title {
+margin: 20px;
+text-align: center;
+}
+
+#artist_title {
+margin: 20px;
+}
+
+#track_title {
+margin: 20px;
+ }
+
+ ul {
+  list-style-type: none;
 }
