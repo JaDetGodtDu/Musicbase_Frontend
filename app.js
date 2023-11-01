@@ -50,7 +50,11 @@ async function submitSearchArtist(event) {
   if (searchResult.length === 0) {
     const artistListContainer = document.querySelector("#artist-list");
     artistListContainer.innerHTML = "";
-    const errorHTML = /*html*/ `No artists found`;
+    const errorHTML = /*html*/ `
+    <ul>
+    <li>No artists found</li>
+    </ul>
+    `;
     artistListContainer.insertAdjacentHTML("beforeend", errorHTML);
   } else {
     const artistList = ListRenderer.construct(searchResult, "#artist-list", ArtistRenderer);
@@ -71,7 +75,11 @@ async function submitSearchAlbum(event) {
   if (searchResult.length === 0) {
     const albumListContainer = document.querySelector("#album-list");
     albumListContainer.innerHTML = "";
-    const errorHTML = /*html*/ `No albums found`;
+    const errorHTML = /*html*/ `
+    <ul>
+    <li>No albums found</li>
+    </ul>
+    `;
     albumListContainer.insertAdjacentHTML("beforeend", errorHTML);
   } else {
     const albumList = ListRenderer.construct(searchResult, "#album-list", AlbumRenderer);
@@ -92,7 +100,11 @@ async function submitSearchTrack(event) {
   if (searchResult.length === 0) {
     const trackListContainer = document.querySelector("#track-list");
     trackListContainer.innerHTML = "";
-    const errorHTML = /*html*/ `No tracks found`;
+    const errorHTML = /*html*/ `
+    <ul>
+    <li>No tracks found</li>
+    </ul>
+    `;
     trackListContainer.insertAdjacentHTML("beforeend", errorHTML);
   } else {
     const trackList = ListRenderer.construct(searchResult, "#track-list", TrackRenderer);
